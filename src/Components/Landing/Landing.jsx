@@ -6,10 +6,10 @@ export default function Landing() {
   return (
     <div className={Styles.bodyLanding}>
       <div className={Styles.leftSide}>
-        <span>left</span>
+        <span></span>
       </div>
       <div className={Styles.rightSide}>
-        <span>rigth</span>
+        <span></span>
       </div>
     </div>
   );
