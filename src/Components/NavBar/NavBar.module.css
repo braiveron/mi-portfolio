@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Raustila';
+    src: url("../../Utils/raustila-Regular.ttf");
+}
+
+.navBar {
+    width: 100vw;
+    height: 15vh;
+    position: fixed;
+
+}
+
+.navContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 30px;
+}
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -30px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    position: relative;
+}
+
+.liOne {
+--clr: #00ade1;
+}
+
+.liTwo {
+--clr: #ff6493;
+}
+
+.liThree {
+--clr: #ffdd1c;
+}
+
+.liFour {
+--clr: #00dc82;
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+}
+
+ul li a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: var(--clr);
+    width: 0;
+    overflow: hidden;
+    transition: 1s;
+    border-right: 4px solid var(--clr);
+    -webkit-text-stroke: 1px var(--clr);    
+}
+
+ul li a:hover::before {
+    width: 100%;
+    -webkit-text-stroke: 1px var(--clr);    
+
+}
+
+
+h1 {
+    font-family: 'Raustila';
+    letter-spacing: 6px;
+    color: #a0a0a0;
+    font-size: 60px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+}
+
+switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: blueviolet;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
+}

@@ -1,0 +1,22 @@
+.bodyLanding {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.rightSide {
+    width: 80rem;
+    background-color: rgb(7, 21, 65);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.leftSide {
+    width: 30rem;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
