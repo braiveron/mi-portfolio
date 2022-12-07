@@ -1,22 +1,30 @@
 .bodyLanding {
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template: 
+    "navBar navBar"
+    "left right";
+}
+
+.navBar {
+    grid-area: navBar;
+    background-color: transparent;
 }
 
 .rightSide {
-    width: 80rem;
-    background-color: rgb(7, 21, 65);
-    display: flex;
+    width: 69vw;    
+    height: 100vh;
+    background-color: hsl(316, 30%, 36%);
+    grid-area: right;
     justify-content: center;
     align-content: center;
 }
 
 .leftSide {
-    width: 30rem;
-    background-color: #161616;
-    display: flex;
+    width: 31vw;
+    background-color: hsl(257, 8%, 18%);
+    grid-area: left;
     justify-content: center;
     align-content: center;
 }
