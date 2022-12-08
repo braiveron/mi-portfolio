@@ -37,8 +37,9 @@
 .saludo {
     font-family: 'Raustila';
     margin-top: 20vh;
-    font-size: 30px;
+    font-size: 40px;
     letter-spacing: 4px;
+    -webkit-transform: rotate(-4deg); 
 }
 
 .presentacion {
@@ -49,9 +50,9 @@
 .presentacion a {
     text-decoration: none;
     color: transparent;
-    -webkit-text-stroke: 2px hsl(257, 8%, 18%);
-   
+  
 }
+
 
 .leftSide {
     width: 31vw;

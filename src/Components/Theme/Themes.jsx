@@ -5,11 +5,13 @@ const themeStylesRight = {
     backgroundRight: "hsl(316, 30%, 36%)",
     backgroundLeft: "hsl(257, 8%, 18%)",
     textColor: "hsl(57, 97%, 85%)",
+    borderLink: "1px hsl(57, 97%, 85%)",
   },
   light: {
     backgroundRight: "hsl(164, 61%, 65%)",
     backgroundLeft: "hsl(57, 97%, 85%)",
     textColor: "hsl(257, 8%, 18%)",
+    borderLink: "2px hsl(257, 8%, 18%)",
   },
 };
 

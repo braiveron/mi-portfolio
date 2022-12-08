@@ -4,7 +4,7 @@ import Styles from "./Landing.module.css";
 import { useTheme } from "../Theme/Themes";
 
 export default function Landing() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div className={Styles.bodyLanding}>
@@ -24,16 +24,32 @@ export default function Landing() {
       >
         <div className={Styles.textContainer}>
           <h2 className={Styles.saludo} style={{ color: theme.textColor }}>
-            Hola, soy Braian
+            👋 Hola, soy Braian
           </h2>
 
           <h3
             className={Styles.presentacion}
             style={{ color: theme.textColor }}
           >
-            me gusta <a href="#proyectos">desarrollar</a> <br /> aplicaciones
-            interactivas <br /> y <a href="#info">divertidas</a> a <br /> traves
-            del codigo
+            me gusta{" "}
+            <a
+              href="#proyectos"
+              style={{
+                WebkitTextStroke: theme.borderLink,
+              }}
+            >
+              desarrollar
+            </a>{" "}
+            <br /> aplicaciones interactivas <br /> y{" "}
+            <a
+              href="#info"
+              style={{
+                WebkitTextStroke: theme.borderLink,
+              }}
+            >
+              divertidas
+            </a>{" "}
+            a <br /> traves del codigo
           </h3>
         </div>
       </div>
