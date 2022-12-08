@@ -1,7 +1,10 @@
 import React from "react";
 import Styles from "./NavBar.module.css";
+import { useTheme } from "../Theme/Themes";
 
 export default function NavBar() {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div className={Styles.navBar}>
       <div className={Styles.navContent}>
@@ -32,12 +35,18 @@ export default function NavBar() {
             </ul>
           </nav>
 
-          <div>
-            <label className={Styles.switch}>
-              <input type="checkbox" />
-              <span className={Styles.slider} />
-            </label>
-          </div>
+          {
+            <div>
+              <label className={Styles.switch}>
+                <input
+                  className={Styles.offScreen}
+                  onClick={toggleTheme}
+                  type="checkbox"
+                />
+                <span className={Styles.slider} />
+              </label>
+            </div>
+          }
         </div>
       </div>
     </div>

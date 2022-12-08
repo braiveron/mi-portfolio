@@ -55,13 +55,13 @@ ul li {
 
 ul li a {
     position: relative;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     line-height: 1em;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+    -webkit-text-stroke: 1px hsl(257, 8%, 18%);
 }
 
 ul li a::before {
@@ -136,4 +136,9 @@ input:checked + .slider {
 
 input:checked + .slider::before {
     transform: translateX(26px);
+}
+
+.offScreen {
+    position: absolute;
+    left: -99999px;
 }

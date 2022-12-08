@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'Raustila';
+    src: url("../../Utils/raustila-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'SuperLine-Regular';
+    src: url("../../Utils/Superline-Regular.ttf");
+}
+
 .bodyLanding {
     width: 100vw;
     height: 100vh;
@@ -9,22 +19,90 @@
 
 .navBar {
     grid-area: navBar;
-    background-color: transparent;
 }
 
 .rightSide {
     width: 69vw;    
     height: 100vh;
-    background-color: hsl(316, 30%, 36%);
     grid-area: right;
     justify-content: center;
     align-content: center;
 }
 
+.textContainer {
+    margin-left: 10vw;
+    margin-right: 6vw;
+}
+
+.saludo {
+    font-family: 'Raustila';
+    margin-top: 20vh;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.presentacion {
+    font-size: 60px;
+   
+}
+
+.presentacion a {
+    text-decoration: none;
+    color: transparent;
+    -webkit-text-stroke: 2px hsl(257, 8%, 18%);
+   
+}
+
 .leftSide {
     width: 31vw;
-    background-color: hsl(257, 8%, 18%);
     grid-area: left;
     justify-content: center;
     align-content: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+}
+
+switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    border-radius: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: blueviolet;
+}
+
+input:checked + .slider::before {
+    transform: translateX(26px);
 }
