@@ -33,6 +33,7 @@ export default function Landing() {
           >
             me gusta{" "}
             <a
+              data-text="desarrollar"
               href="#proyectos"
               style={{
                 WebkitTextStroke: theme.borderLink,
@@ -42,6 +43,7 @@ export default function Landing() {
             </a>{" "}
             <br /> aplicaciones interactivas <br /> y{" "}
             <a
+              data-text="divertidas"
               href="#info"
               style={{
                 WebkitTextStroke: theme.borderLink,

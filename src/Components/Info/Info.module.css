@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Mosk';
+    src: url("../../Utils/Mosk\ Thin\ 100.ttf");
+}
+@font-face {
+    font-family: 'MoskBold';
+    src: url("../../Utils/Mosk\ Ultra-Bold\ 900.ttf");
+}
+
+.infoBackground{
+    height: 100vh;
+}
+
+.decorationOne {
+    display: inline-block;
+    position: relative;
+    top: 25vh;
+    left: 78vw;
+}
+
+.circleOne {
+    position: relative;
+    top: 15rem;
+    right: 2rem;
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+}
+
+.circleTwo {
+    background-color: hsl(264, 51%, 71%);
+    border-radius: 300px;
+    width: 200px;
+    height: 200px;
+}
+
+.card {
+    margin: -20em 15em;
+    z-index: 1;
+    position: relative;
+    padding: 15px 50px;
+}
+
+.infoTitle {
+    position: relative;
+    font-family: 'MoskBold', sans-serif;
+    font-size: 2.5em;  
+    z-index: 1;
+}
+
+.sublineTitle {
+    position: relative;
+    top: -50px;
+    z-index: 0;
+    width: 150px;
+    height: 20px;
+    background-color: rgba(255, 102, 148, 0.4);
+}
+
+.paragraph {
+    font-family: 'Mosk', sans-serif;
+    font-size: 1.5em;
+    margin-top: -50px;
+}
+

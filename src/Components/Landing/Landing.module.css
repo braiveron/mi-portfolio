@@ -39,7 +39,7 @@
     margin-top: 20vh;
     font-size: 40px;
     letter-spacing: 4px;
-    -webkit-transform: rotate(-4deg); 
+    transform: rotate(-3deg); 
 }
 
 .presentacion {
@@ -49,8 +49,20 @@
 
 .presentacion a {
     text-decoration: none;
-    color: transparent;
-  
+    color: transparent; 
+}
+
+.presentacion a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #ffdd1c;
+    width: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.presentacion a:hover::before {
+    width: 25%;   
 }
 
 

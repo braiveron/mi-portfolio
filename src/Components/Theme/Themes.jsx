@@ -4,14 +4,22 @@ const themeStylesRight = {
   dark: {
     backgroundRight: "hsl(316, 30%, 36%)",
     backgroundLeft: "hsl(257, 8%, 18%)",
-    textColor: "hsl(57, 97%, 85%)",
-    borderLink: "1px hsl(57, 97%, 85%)",
+    textColor: "hsl(270, 12%, 93%)",
+    borderLink: "1px hsl(270, 12%, 93%)",
+    bgcInfo: "hsl(257, 8%, 18%)",
+    bgcCardInfo: "hsl(257, 8%, 18%)",
+    cardShadow: "15px 15px 0 hsl(270, 12%, 93%)",
+    borderCard: "4px solid hsl(270, 12%, 93%)",
   },
   light: {
     backgroundRight: "hsl(164, 61%, 65%)",
     backgroundLeft: "hsl(57, 97%, 85%)",
     textColor: "hsl(257, 8%, 18%)",
     borderLink: "2px hsl(257, 8%, 18%)",
+    bgcInfo: "hsl(270, 12%, 93%)",
+    bgcCardInfo: "hsl(270, 12%, 93%)",
+    cardShadow: "15px 15px 0 #404040",
+    borderCard: "4px solid #404040",
   },
 };
 

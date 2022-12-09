@@ -7,7 +7,7 @@
     width: 100vw;
     height: 15vh;
     position: fixed;
-
+    z-index: 3;
 }
 
 .navContent {
@@ -23,6 +23,10 @@
     justify-content: flex-end;
     align-items: center;
     margin-top: -30px;
+}
+
+.linkReact {
+    text-decoration: none;
 }
 
 ul {
@@ -53,7 +57,8 @@ ul li {
     list-style: none;
 }
 
-ul li a {
+
+ul li p {
     position: relative;
     font-size: 25px;
     text-decoration: none;
@@ -61,10 +66,9 @@ ul li a {
     text-transform: uppercase;
     letter-spacing: 2px;
     color: transparent;
-    -webkit-text-stroke: 1px hsl(257, 8%, 18%);
 }
 
-ul li a::before {
+ul li p::before {
     content: attr(data-text);
     position: absolute;
     color: var(--clr);
@@ -75,14 +79,13 @@ ul li a::before {
     -webkit-text-stroke: 1px var(--clr);    
 }
 
-ul li a:hover::before {
+ul li p:hover::before {
     width: 100%;
     -webkit-text-stroke: 1px var(--clr);    
-
 }
 
 
-h1 {
+.nombre {
     font-family: 'Raustila';
     letter-spacing: 6px;
     color: #a0a0a0;

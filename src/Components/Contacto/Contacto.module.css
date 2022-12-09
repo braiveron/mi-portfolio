@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Mosk';
+    src: url("../../Utils/Mosk\ Thin\ 100.ttf");
+}
+@font-face {
+    font-family: 'MoskBold';
+    src: url("../../Utils/Mosk\ Ultra-Bold\ 900.ttf");
+}
+
+
+.contactContainer {
+    width: 100vw;
+    height: 100vh;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.textContact {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    background-color: aliceblue;
+    padding: 20px 50px 0;
+    margin: 0 50px;
+}
+
+.imageContact {
+    text-align: center;
+}
+
+.titleContact {
+    font-family: 'MoskBold', sans-serif;
+    font-size: 2rem;
+    color: #404040;
+}
+
+.paragraph {
+    font-family: 'Mosk', sans-serif;
+    font-size: 1.5rem;
+    color: #404040;
+}
+
+.linksContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 40px;
+    font-size: 40px;
+}
+
+.linksContact a {
+    color: #404040;
+    margin: 15px;
+    transition: 0.5s;
+}
+
+.linksContact a:hover {
+    color: rgb(255, 102, 148);
+}
+
+.heyThere {
+    position: relative;
+    bottom: 250px;
+    left: 40px;
+    color: #404040;
+    font-family: 'MoskBold', sans-serif;
+    font-size: 60px;
+}
