@@ -19,13 +19,16 @@
 
 .navBar {
     grid-area: navBar;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 .rightSide {
     width: 69vw;    
-    height: 100vh;
+    height: 100%;
     grid-area: right;
-    justify-content: center;
+    justify-content: flex-start;
     align-content: center;
 }
 
@@ -67,6 +70,8 @@
 
 
 .leftSide {
+    position: relative;
+    top: 0;
     width: 31vw;
     grid-area: left;
     justify-content: center;

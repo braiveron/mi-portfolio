@@ -17,8 +17,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
 .textContact {
@@ -50,7 +48,6 @@
 .linksContact {
     display: flex;
     flex-direction: row;
-    
     margin-right: 40px;
     font-size: 40px;
 }

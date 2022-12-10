@@ -6,9 +6,17 @@
 .navBar {
     width: 100vw;
     height: 15vh;
-    position: fixed;
-    z-index: 3;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    transition: 0.7s;
+    background-color: transparent;
 }
+
+/* .navBar .active {
+    background-color: rgba(64, 64, 64, 0.4);
+} */
+
 
 .navContent {
     display: flex;

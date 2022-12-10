@@ -5,7 +5,7 @@ import { useTheme } from "../Theme/Themes";
 import BFLogo from "../../Utils/BFLogo.png";
 
 export default function Proyectos() {
-  const { theme, toggleTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <div
@@ -14,7 +14,9 @@ export default function Proyectos() {
         backgroundColor: theme.bgcProyectos,
       }}
     >
-      <NavBar />
+      <div className={Styles.navContainer}>
+        <NavBar />
+      </div>
       <div className={Styles.leftContainer}>
         <h2
           className={Styles.proyectTitle}
@@ -24,6 +26,7 @@ export default function Proyectos() {
         >
           Proyectos.
         </h2>
+        <p className={Styles.sublineTitle}></p>
         <div
           className={Styles.card}
           style={{
@@ -51,8 +54,18 @@ export default function Proyectos() {
             ) : (
               "HOLAS"
             )} */}
-
-            <img src={BFLogo} alt="not found" width={240} height={80} />
+            <div className={Styles.imgContainer}>
+              <img
+                src={BFLogo}
+                alt="not found"
+                width={240}
+                height={80}
+                style={{
+                  backgroundColor: theme.BFbgc,
+                  padding: "5px 10px",
+                }}
+              />
+            </div>
 
             <p
               style={{
@@ -62,7 +75,8 @@ export default function Proyectos() {
               E-commerce de indumentaria deportiva. <br />
               Contiene diferentes funciones para usuarios logueados o no y para
               administradores. <br /> Se implementa autenticacion con la
-              tecnologi Auth0 y se incorpora la pasarela de pago de MercadoPago.
+              tecnologia Auth0 y se incorpora la pasarela de pago de
+              MercadoPago.
             </p>
           </div>
 
@@ -70,6 +84,7 @@ export default function Proyectos() {
             <a
               href="https://github.com/br1oli/Becoming_Fit"
               target="_blank"
+              rel="noreferrer"
               style={{
                 color: theme.textColor,
               }}
@@ -79,6 +94,7 @@ export default function Proyectos() {
             <a
               href="https://becoming-fit.vercel.app/"
               target="_blank"
+              rel="noreferrer"
               style={{
                 color: theme.textColor,
               }}
@@ -91,6 +107,7 @@ export default function Proyectos() {
           <a
             href="https://www.linkedin.com/in/braianveron/"
             target="_blank"
+            rel="noreferrer"
             style={{
               backgroundColor: theme.bgcCardProyect,
               border: theme.borderCard,
@@ -101,6 +118,81 @@ export default function Proyectos() {
           >
             visita mi Linkedin...
           </a>
+        </div>
+
+        <div
+          className={Styles.card}
+          style={{
+            backgroundColor: theme.bgcCardProyect,
+            border: theme.borderCard,
+          }}
+        >
+          <div
+            className={Styles.topCard}
+            style={{
+              color: theme.textColor,
+            }}
+          >
+            •••
+          </div>
+
+          <div
+            className={Styles.textCard}
+            style={{
+              borderTop: theme.borderCard,
+            }}
+          >
+            {/*  {theme ? (
+              <img src={BFLogo} alt="not found" width={240} height={80} />
+            ) : (
+              "HOLAS"
+            )} */}
+            <div className={Styles.imgContainer}>
+              <img
+                src={BFLogo}
+                alt="not found"
+                width={240}
+                height={80}
+                style={{
+                  backgroundColor: theme.BFbgc,
+                  padding: "5px 10px",
+                }}
+              />
+            </div>
+
+            <p
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Lista de tareas. <br />
+              Funciones para agregar tareas a la lista, marcarlas como
+              realizadas y poder eliminarlas <br />
+            </p>
+          </div>
+
+          <div className={Styles.linksCard}>
+            <a
+              href="https://github.com/braiveron/tareas-reactAPP"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Repositorio
+            </a>
+            <a
+              href="https://becoming-fit.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Visita el proyecto →
+            </a>
+          </div>
         </div>
       </div>
       <div className={Styles.rightContainer}>
@@ -128,15 +220,35 @@ export default function Proyectos() {
               color: theme.textColor,
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo omnis
-            et nobis at natus accusamus commodi suscipit ut vitae eveniet,
-            reprehenderit recusandae asperiores beatae dolorem dolorum veritatis
-            enim alias nihil.
+            <div className={Styles.imgContainer}>
+              <img
+                src={BFLogo}
+                alt="not found"
+                width={240}
+                height={80}
+                style={{
+                  backgroundColor: theme.BFbgc,
+                  padding: "5px 10px",
+                }}
+              />
+            </div>
+
+            <p
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Proyecto Individual consumiendo informacion de una API, recreando
+              un buscador y creador de recetas. <br /> Busqueda y filtros por
+              tipos de dieta, orden alfabetico.
+            </p>
           </div>
 
           <div className={Styles.linksCard}>
             <a
-              href="#"
+              href="https://github.com/braiveron/PI-FOOD"
+              target="_blank"
+              rel="noreferrer"
               style={{
                 color: theme.textColor,
               }}
@@ -145,6 +257,8 @@ export default function Proyectos() {
             </a>
             <a
               href="#"
+              target="_blank"
+              rel="noreferrer"
               style={{
                 color: theme.textColor,
               }}
@@ -178,15 +292,34 @@ export default function Proyectos() {
               color: theme.textColor,
             }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo omnis
-            et nobis at natus accusamus commodi suscipit ut vitae eveniet,
-            reprehenderit recusandae asperiores beatae dolorem dolorum veritatis
-            enim alias nihil.
+            <div className={Styles.imgContainer}>
+              <img
+                src={BFLogo}
+                alt="not found"
+                width={240}
+                height={80}
+                style={{
+                  backgroundColor: theme.BFbgc,
+                  padding: "5px 10px",
+                }}
+              />
+            </div>
+
+            <p
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Calculadora con operaciones basicas de suma, resta, multiplicacion
+              y division <br />
+            </p>
           </div>
 
           <div className={Styles.linksCard}>
             <a
-              href="#"
+              href="https://github.com/braiveron/Calculadora-REACT"
+              target="_blank"
+              rel="noreferrer"
               style={{
                 color: theme.textColor,
               }}
@@ -195,6 +328,80 @@ export default function Proyectos() {
             </a>
             <a
               href="#"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Visita el proyecto →
+            </a>
+          </div>
+        </div>
+
+        <div
+          className={Styles.cardTwo}
+          style={{
+            backgroundColor: theme.bgcCardProyect,
+            border: theme.borderCard,
+          }}
+        >
+          <div
+            className={Styles.topCard}
+            style={{
+              color: theme.textColor,
+            }}
+          >
+            •••
+          </div>
+
+          <div
+            className={Styles.textCard}
+            style={{
+              borderTop: theme.borderCard,
+
+              color: theme.textColor,
+            }}
+          >
+            <div className={Styles.imgContainer}>
+              <img
+                src={BFLogo}
+                alt="not found"
+                width={240}
+                height={80}
+                style={{
+                  backgroundColor: theme.BFbgc,
+                  padding: "5px 10px",
+                }}
+              />
+            </div>
+
+            <p
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Proyecto Individual consumiendo informacion de una API, recreando
+              un buscador y creador de pokemons. <br /> Busqueda y filtros por
+              tipos de pokemon, orden alfabetico.
+            </p>
+          </div>
+
+          <div className={Styles.linksCard}>
+            <a
+              href="https://github.com/braiveron/P-Pokemon"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Repositorio
+            </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noreferrer"
               style={{
                 color: theme.textColor,
               }}
@@ -204,6 +411,7 @@ export default function Proyectos() {
           </div>
         </div>
       </div>
+      <br /> <br />
     </div>
   );
 }

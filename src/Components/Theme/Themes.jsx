@@ -13,10 +13,10 @@ const themeStylesRight = {
     borderCard: "4px solid hsl(270, 12%, 93%)",
     bgcProyectos: "hsl(263, 29%, 32%)",
     bgcCardProyect: "transparent",
-    prueba: "red",
+    BFbgc: "transparent",
   },
   light: {
-    prueba: "blue",
+    BFbgc: "#404040",
     backgroundRight: "hsl(164, 61%, 65%)",
     backgroundLeft: "hsl(57, 97%, 85%)",
     textColor: "hsl(257, 8%, 18%)",

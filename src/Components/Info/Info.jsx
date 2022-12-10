@@ -7,12 +7,12 @@ export default function Info() {
   const { theme } = useTheme();
 
   return (
-    <div className={Styles.infoContainer}>
+    <div
+      className={Styles.infoContainer}
+      style={{ backgroundColor: theme.bgcInfo }}
+    >
       <NavBar />
-      <div
-        className={Styles.infoBackground}
-        style={{ backgroundColor: theme.bgcInfo }}
-      >
+      <div className={Styles.infoBackground}>
         <div className={Styles.decorationOne}>
           <p
             className={Styles.circleOne}

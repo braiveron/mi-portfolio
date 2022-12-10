@@ -11,6 +11,7 @@ export default function Landing() {
       <div className={Styles.navBar}>
         <NavBar />
       </div>
+
       <div
         className={Styles.leftSide}
         style={{ backgroundColor: theme.backgroundLeft }}

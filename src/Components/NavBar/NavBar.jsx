@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Styles from "./NavBar.module.css";
 import { useTheme } from "../Theme/Themes";
 
 export default function NavBar() {
   const { theme, toggleTheme } = useTheme();
+  const [navBar, setNavBar] = useState(false);
 
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   /*   className={clickFilters ? `${Styles["filters"]} ${Styles.active}` : `${Styles.filters}`} */
 
   return (
-    <div className={Styles.navBar}>
+    <div
+    /* className={[navBar ? (Styles.navBar, Styles.active) : Styles.navBar].join(
+        " "
+      )} */
+    >
       <div className={Styles.navContent}>
         <h1
           className={Styles.nombre}
