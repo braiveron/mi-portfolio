@@ -11,7 +11,14 @@ export default function NavBar() {
   return (
     <div className={Styles.navBar}>
       <div className={Styles.navContent}>
-        <h1 className={Styles.nombre}>Braian</h1>
+        <h1
+          className={Styles.nombre}
+          style={{
+            color: theme.textColor,
+          }}
+        >
+          Braian
+        </h1>
         <div className={Styles.links}>
           <nav>
             <ul>

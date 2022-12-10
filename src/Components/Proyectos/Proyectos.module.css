@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'MoskBold';
+    src: url("../../Utils/Mosk\ Ultra-Bold\ 900.ttf");
+}
+
+@font-face {
+    font-family: 'Mosk';
+    src: url("../../Utils/Mosk\ Thin\ 100.ttf");
+}
+
+
+.mainContainer {
+    width: 100vw;
+    height: 100%;
+    display: grid;
+    grid-template: 
+    "left right" / 3.4fr 6fr;
+}
+
+.leftContainer {
+    grid-area: left;
+    padding-top: 20vh;
+    margin-left: 3vw;
+}
+
+.rightContainer {
+    grid-area: right;
+    padding-top: 20vh;
+    margin-right: 3vw;
+}
+
+.proyectTitle {
+    font-family: 'MoskBold', sans-serif;
+    font-size: 3rem;
+}
+
+.card {
+    border-radius: 20px;
+}
+
+.topCard {
+    font-size: 50px;
+    padding-left: 25px;
+    margin: -15px;
+}
+
+.textCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.textCard p {
+    font-family: 'Mosk', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.linksCard {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+
+.linksCard a {
+    font-family: 'Mosk', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.linksCard a:hover {
+    font-weight: bolder;
+}
+
+.cardTwo {
+    margin-left: 20rem;
+    margin-right: 3rem;
+    border-radius: 20px;
+}
+
+.cardThree {
+    margin: 5rem 15rem 5rem 5rem;
+    border-radius: 20px;
+}
+
+.linkedinBox a{
+    display: inline-block;
+    margin: 5rem 1rem 5rem 12rem;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: 'MoskBold';
+    font-size: 20px;
+}
+
+.linkedinBox a:hover {
+    cursor: pointer;
+    box-shadow: none;
+}

@@ -3,6 +3,7 @@ import NavBar from "../NavBar/NavBar";
 import Styles from "./Contacto.module.css";
 import { useTheme } from "../Theme/Themes";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import GreenImg from "../../Utils/AvatarVerde.png";
 
 export default function Contacto() {
   const { theme } = useTheme();
@@ -17,12 +18,27 @@ export default function Contacto() {
       <NavBar />
 
       <div className={Styles.cardContainer}>
-        <div className={Styles.textContact}>
+        <div
+          className={Styles.textContact}
+          style={{
+            background: theme.bgcCardInfo,
+          }}
+        >
           <div className={Styles.info}>
-            <h2 className={Styles.titleContact}>
+            <h2
+              className={Styles.titleContact}
+              style={{
+                color: theme.textColor,
+              }}
+            >
               Siempre estoy dispuesto a charlar.
             </h2>
-            <p className={Styles.paragraph}>
+            <p
+              className={Styles.paragraph}
+              style={{
+                color: theme.textColor,
+              }}
+            >
               Puedes{" "}
               <strong>
                 <u> enviarme un email</u>
@@ -31,23 +47,37 @@ export default function Contacto() {
               sociales.
             </p>
             <div className={Styles.linksContact}>
-              <a href="https://github.com/braiveron">
+              <a
+                href="https://github.com/braiveron"
+                style={{
+                  color: theme.textColor,
+                }}
+              >
                 <BsGithub />
               </a>
-              <a href="https://www.linkedin.com/in/braianveron/">
+              <a
+                href="https://www.linkedin.com/in/braianveron/"
+                style={{
+                  color: theme.textColor,
+                }}
+              >
                 <BsLinkedin />
               </a>
             </div>
+            <h1
+              className={Styles.heyThere}
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Hey there!
+            </h1>
           </div>
           <div className={Styles.imageContact}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-            deleniti, placeat, quae voluptatibus magni accusantium voluptatum,
-            ipsum nisi tempore eum aperiam dolor? Enim harum consequatur unde
-            reprehenderit fuga quae quidem!
+            <img src={GreenImg} alt="not found" width={400} height={400} />
           </div>
         </div>
       </div>
-      <h1 className={Styles.heyThere}>Hey there!</h1>
     </div>
   );
 }
