@@ -3,6 +3,7 @@ import NavBar from "../NavBar/NavBar";
 import Styles from "./Proyectos.module.css";
 import { useTheme } from "../Theme/Themes";
 import BFLogo from "../../Utils/BFLogo.png";
+import Slider from "../Slider/Slider";
 
 export default function Proyectos() {
   const { theme } = useTheme();
@@ -16,6 +17,9 @@ export default function Proyectos() {
     >
       <div className={Styles.navContainer}>
         <NavBar />
+      </div>
+      <div className={Styles.sliderContent}>
+        <Slider />
       </div>
       <div className={Styles.leftContainer}>
         <h2

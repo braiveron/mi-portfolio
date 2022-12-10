@@ -15,11 +15,17 @@
     display: grid;
     grid-template: 
     "navBar navBar"
+    "slider slider"
     "left right" / 500px auto
 }
 
 .navContainer {
     grid-area: navBar;
+}
+
+.sliderContent {
+    grid-area: slider;
+    margin-bottom: 80px;
 }
 
 .leftContainer {

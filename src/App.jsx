@@ -5,6 +5,7 @@ import Proyectos from "./Components/Proyectos/Proyectos";
 import Contacto from "./Components/Contacto/Contacto";
 import Info from "./Components/Info/Info";
 import ThemeProvider from "./Components/Theme/Themes";
+import Slider from "./Components/Slider/Slider";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route exact path="/mis-proyectos" element={<Proyectos />} />
           <Route exact path="/sobre-mi" element={<Info />} />
           <Route exact path="/contactame" element={<Contacto />} />
+          <Route exact path="/slider" element={<Slider />} />
         </Routes>
       </ThemeProvider>
     </BrowserRouter>
