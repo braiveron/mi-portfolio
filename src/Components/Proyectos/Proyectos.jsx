@@ -5,6 +5,7 @@ import { useTheme } from "../Theme/Themes";
 import BFLogo from "../../Utils/BFLogo.png";
 import Calculadora from "../../Utils/Calculadora.png";
 import Tareas from "../../Utils/Tareas.png";
+import Contador from "../../Utils/Contador.png";
 import Slider from "../Slider/Slider";
 
 export default function Proyectos() {
@@ -33,6 +34,7 @@ export default function Proyectos() {
           Proyectos.
         </h2>
         <p className={Styles.sublineTitle}></p>
+
         <div
           className={Styles.card}
           style={{
@@ -109,7 +111,8 @@ export default function Proyectos() {
             </a>
           </div>
         </div>
-        <div className={Styles.linkedinBox}>
+
+        <div className={Styles.profileBox}>
           <a
             href="https://www.linkedin.com/in/braianveron/"
             target="_blank"
@@ -127,7 +130,7 @@ export default function Proyectos() {
         </div>
 
         <div
-          className={Styles.card}
+          className={Styles.cardTareas}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
@@ -175,7 +178,70 @@ export default function Proyectos() {
               Repositorio
             </a>
             <a
-              href="https://tareas-app-black.vercel.app/"
+              href="https://bv-mistareas.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Visita el proyecto →
+            </a>
+          </div>
+        </div>
+
+        <div
+          className={Styles.cardContador}
+          style={{
+            backgroundColor: theme.bgcCardProyect,
+            border: theme.borderCard,
+          }}
+        >
+          <div
+            className={Styles.topCard}
+            style={{
+              color: theme.textColor,
+            }}
+          >
+            •••
+          </div>
+
+          <div
+            className={Styles.textCard}
+            style={{
+              borderTop: theme.borderCard,
+
+              color: theme.textColor,
+            }}
+          >
+            <div className={Styles.imgContainer}>
+              <img src={Contador} alt="not found" width={200} height={240} />
+
+              <p
+                style={{
+                  color: theme.textColor,
+                }}
+              >
+                Aplicacion para contar de forma ascendente haciendo click en el
+                boton correspondiente y reiniciar el conteo de ser necesario.
+                <br />
+              </p>
+            </div>
+          </div>
+
+          <div className={Styles.linksCard}>
+            <a
+              href="https://github.com/braiveron/contador"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Repositorio
+            </a>
+            <a
+              href="https://bv-contador.vercel.app/"
               target="_blank"
               rel="noreferrer"
               style={{
@@ -310,7 +376,7 @@ export default function Proyectos() {
               Repositorio
             </a>
             <a
-              href="https://calculadora-react-xi-five.vercel.app/"
+              href="https://bv-calculadora.vercel.app/"
               target="_blank"
               rel="noreferrer"
               style={{
@@ -322,75 +388,94 @@ export default function Proyectos() {
           </div>
         </div>
 
-        <div
-          className={Styles.cardTwo}
-          style={{
-            backgroundColor: theme.bgcCardProyect,
-            border: theme.borderCard,
-          }}
-        >
-          <div
-            className={Styles.topCard}
-            style={{
-              color: theme.textColor,
-            }}
-          >
-            •••
+        <div className={Styles.linkCard}>
+          <div className={Styles.profileBoxTwo}>
+            <a
+              href="https://www.linkedin.com/in/braianveron/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                backgroundColor: theme.bgcCardProyect,
+                border: theme.borderCard,
+                boxShadow: theme.linkShadow,
+                color: theme.textColor,
+                /*   onMouseOut: (this.style.backgroundColor = theme.prueba), */
+              }}
+            >
+              mi perfil Github...
+            </a>
           </div>
 
           <div
-            className={Styles.textCard}
+            className={Styles.cardTwo}
             style={{
-              borderTop: theme.borderCard,
-
-              color: theme.textColor,
+              backgroundColor: theme.bgcCardProyect,
+              border: theme.borderCard,
             }}
           >
-            <div className={Styles.imgContainer}>
-              <img
-                src={BFLogo}
-                alt="not found"
-                width={240}
-                height={80}
-                style={{
-                  backgroundColor: theme.BFbgc,
-                  padding: "5px 10px",
-                }}
-              />
+            <div
+              className={Styles.topCard}
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              •••
             </div>
 
-            <p
+            <div
+              className={Styles.textCard}
               style={{
-                color: theme.textColor,
-              }}
-            >
-              Proyecto Individual consumiendo informacion de una API, recreando
-              un buscador y creador de pokemons. <br /> Busqueda y filtros por
-              tipos de pokemon, orden alfabetico.
-            </p>
-          </div>
+                borderTop: theme.borderCard,
 
-          <div className={Styles.linksCard}>
-            <a
-              href="https://github.com/braiveron/P-Pokemon"
-              target="_blank"
-              rel="noreferrer"
-              style={{
                 color: theme.textColor,
               }}
             >
-              Repositorio
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noreferrer"
-              style={{
-                color: theme.textColor,
-              }}
-            >
-              Visita el proyecto →
-            </a>
+              <div className={Styles.imgContainer}>
+                <img
+                  src={BFLogo}
+                  alt="not found"
+                  width={240}
+                  height={80}
+                  style={{
+                    backgroundColor: theme.BFbgc,
+                    padding: "5px 10px",
+                  }}
+                />
+              </div>
+
+              <p
+                style={{
+                  color: theme.textColor,
+                }}
+              >
+                Proyecto Individual consumiendo informacion de una API,
+                recreando un buscador y creador de pokemons. <br /> Busqueda y
+                filtros por tipos de pokemon, orden alfabetico.
+              </p>
+            </div>
+
+            <div className={Styles.linksCard}>
+              <a
+                href="https://github.com/braiveron/P-Pokemon"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  color: theme.textColor,
+                }}
+              >
+                Repositorio
+              </a>
+              <a
+                href="#"
+                target="_blank"
+                rel="noreferrer"
+                style={{
+                  color: theme.textColor,
+                }}
+              >
+                Visita el proyecto →
+              </a>
+            </div>
           </div>
         </div>
       </div>

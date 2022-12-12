@@ -61,6 +61,16 @@
     margin-top: -40px;
 }
 
+.cardTareas {
+    border-radius: 20px;
+    margin: -50px 0 100px 80px;
+}
+
+.cardContador {
+    border-radius: 20px;
+    margin: -50px 80px 100px 0px;
+}
+
 .topCard {
     font-size: 50px;
     padding-left: 25px;
@@ -98,7 +108,7 @@
 }
 
 .cardTwo {
-    margin-left: 20rem;
+    margin-left: 6rem;
     margin-right: 3rem;
     border-radius: 20px;
 }
@@ -108,10 +118,40 @@
     border-radius: 20px;
 }
 
-.linkedinBox a{
-    display: inline-block;
+.cardContador {
+    margin: 1rem 0 1rem 2rem;
+    border-radius: 20px;
+}
+
+.profileBox a{
+    display: flex;
     margin: 5rem 1rem 5rem 12rem;
     padding: 10px 15px;
+    text-decoration: none;
+    font-family: 'MoskBold';
+    font-size: 20px;
+}
+
+/* .profileBoxTwo a{
+    display: flex;
+
+width: 170px;
+
+    padding: 10px 15px;
+    text-decoration: none;
+    font-family: 'MoskBold';
+    font-size: 20px;
+} */
+
+.profileBoxTwo {
+    display: flex;
+    align-items: flex-end;
+}
+
+.profileBoxTwo a{
+    width: 170px;
+    padding: 10px 15px;
+    margin: 10rem -3rem 5rem 3rem;
     text-decoration: none;
     font-family: 'MoskBold';
     font-size: 20px;
@@ -120,4 +160,9 @@
 .imgContainer {
     display: flex;
     justify-content: center;
+}
+
+.linkCard {
+    display: flex;
+
 }

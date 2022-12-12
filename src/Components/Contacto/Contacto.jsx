@@ -1,10 +1,10 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import Styles from "./Contacto.module.css";
-
 import { useTheme } from "../Theme/Themes";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Avatar from "../../Utils/Avatar.png";
+import Avatar2 from "../../Utils/Avatar2.png";
 
 export default function Contacto() {
   const { theme } = useTheme();
@@ -85,7 +85,7 @@ export default function Contacto() {
           ></p>
           <img
             className={Styles.avatar}
-            src={Avatar}
+            src={Avatar2}
             alt="not found"
             width={520}
             height={520}

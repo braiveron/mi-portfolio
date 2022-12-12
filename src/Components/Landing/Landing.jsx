@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import Styles from "./Landing.module.css";
 import { useTheme } from "../Theme/Themes";
+import Coding from "../../Utils/AvatarCoding.png";
 
 export default function Landing() {
   const { theme } = useTheme();
@@ -12,12 +13,14 @@ export default function Landing() {
         <NavBar />
       </div>
 
+      <div className={Styles.avatarCoding}>
+        <img src={Coding} alt="not found" width={500} height={500} />
+      </div>
+
       <div
         className={Styles.leftSide}
         style={{ backgroundColor: theme.backgroundLeft }}
-      >
-        <span></span>
-      </div>
+      ></div>
 
       <div
         className={Styles.rightSide}

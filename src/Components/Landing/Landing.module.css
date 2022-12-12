@@ -25,6 +25,8 @@
 }
 
 .rightSide {
+    position: fixed;
+    left: 31vw;
     width: 69vw;    
     height: 100%;
     grid-area: right;
@@ -32,8 +34,16 @@
     align-content: center;
 }
 
+.avatarCoding {
+
+    position: relative;
+    z-index: 4;
+    top: 60px;
+    left: 100px;
+}
+
 .textContainer {
-    margin-left: 10vw;
+    margin-left: 20vw;
     margin-right: 6vw;
 }
 
@@ -47,7 +57,7 @@
 
 .presentacion {
     font-size: 60px;
-   
+    margin-top: -15px;
 }
 
 .presentacion a {
@@ -70,8 +80,7 @@
 
 
 .leftSide {
-    position: relative;
-    top: 0;
+    position: fixed;
     width: 31vw;
     grid-area: left;
     justify-content: center;
