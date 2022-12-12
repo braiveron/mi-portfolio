@@ -29,10 +29,6 @@
     top: 20vh;
 }
 
-.imageContact {
-    text-align: center;
-}
-
 .titleContact {
     font-family: 'MoskBold', sans-serif;
     font-size: 2rem;
@@ -66,4 +62,21 @@
     justify-content: flex-end;
     font-family: 'MoskBold', sans-serif;
     font-size: 60px;
+}
+
+.circle {
+    position: relative;
+    top: 70px;
+    right: -80px;
+    width: 420px;
+    height: 310px;
+    border-radius: 50%;
+    transform: rotate(-5deg);
+}
+
+.avatar {
+    position: relative;
+    z-index: 1;
+    top: -516px;
+    left: 570px;
 }

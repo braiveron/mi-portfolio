@@ -3,6 +3,8 @@ import NavBar from "../NavBar/NavBar";
 import Styles from "./Proyectos.module.css";
 import { useTheme } from "../Theme/Themes";
 import BFLogo from "../../Utils/BFLogo.png";
+import Calculadora from "../../Utils/Calculadora.png";
+import Tareas from "../../Utils/Tareas.png";
 import Slider from "../Slider/Slider";
 
 export default function Proyectos() {
@@ -146,22 +148,8 @@ export default function Proyectos() {
               borderTop: theme.borderCard,
             }}
           >
-            {/*  {theme ? (
-              <img src={BFLogo} alt="not found" width={240} height={80} />
-            ) : (
-              "HOLAS"
-            )} */}
             <div className={Styles.imgContainer}>
-              <img
-                src={BFLogo}
-                alt="not found"
-                width={240}
-                height={80}
-                style={{
-                  backgroundColor: theme.BFbgc,
-                  padding: "5px 10px",
-                }}
-              />
+              <img src={Tareas} alt="not found" width={360} height={120} />
             </div>
 
             <p
@@ -169,15 +157,15 @@ export default function Proyectos() {
                 color: theme.textColor,
               }}
             >
-              Lista de tareas. <br />
-              Funciones para agregar tareas a la lista, marcarlas como
-              realizadas y poder eliminarlas <br />
+              Aplicacion para crear una lista de tareas. <br />
+              Funciones para agregar tareas a realizar, marcarlas como ya hechas
+              y la opcion de poder eliminarlas del listado. <br />
             </p>
           </div>
 
           <div className={Styles.linksCard}>
             <a
-              href="https://github.com/braiveron/tareas-reactAPP"
+              href="https://github.com/braiveron/tareasApp"
               target="_blank"
               rel="noreferrer"
               style={{
@@ -187,7 +175,7 @@ export default function Proyectos() {
               Repositorio
             </a>
             <a
-              href="https://becoming-fit.vercel.app/"
+              href="https://tareas-app-black.vercel.app/"
               target="_blank"
               rel="noreferrer"
               style={{
@@ -297,26 +285,17 @@ export default function Proyectos() {
             }}
           >
             <div className={Styles.imgContainer}>
-              <img
-                src={BFLogo}
-                alt="not found"
-                width={240}
-                height={80}
-                style={{
-                  backgroundColor: theme.BFbgc,
-                  padding: "5px 10px",
-                }}
-              />
-            </div>
+              <img src={Calculadora} alt="not found" width={200} height={240} />
 
-            <p
-              style={{
-                color: theme.textColor,
-              }}
-            >
-              Calculadora con operaciones basicas de suma, resta, multiplicacion
-              y division <br />
-            </p>
+              <p
+                style={{
+                  color: theme.textColor,
+                }}
+              >
+                Calculadora con operaciones basicas de suma, resta,
+                multiplicacion y division <br />
+              </p>
+            </div>
           </div>
 
           <div className={Styles.linksCard}>
@@ -331,7 +310,7 @@ export default function Proyectos() {
               Repositorio
             </a>
             <a
-              href="#"
+              href="https://calculadora-react-xi-five.vercel.app/"
               target="_blank"
               rel="noreferrer"
               style={{

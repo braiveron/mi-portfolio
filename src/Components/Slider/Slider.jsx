@@ -13,85 +13,85 @@ export default function Slider() {
     <div className={Styles.slider}>
       <div className={Styles.slideTrack}>
         <div className={Styles.slide}>
-          <img src={JS} alt="" />
+          <img src={JS} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={HTML} alt="" />
+          <img src={HTML} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={CSS} alt="" />
+          <img src={CSS} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={NODE} alt="" />
+          <img src={NODE} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={SQL} alt="" />
+          <img src={SQL} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={REACT} alt="" />
+          <img src={REACT} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={GIT} alt="" />
+          <img src={GIT} alt="not found" />
         </div>
         <div className={Styles.slide}>
-          <img src={JS} alt="" />
-        </div>
-
-        <div className={Styles.slide}>
-          <img src={HTML} alt="" />
+          <img src={JS} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={CSS} alt="" />
+          <img src={HTML} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={NODE} alt="" />
+          <img src={CSS} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={SQL} alt="" />
+          <img src={NODE} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={REACT} alt="" />
+          <img src={SQL} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={GIT} alt="" />
-        </div>
-        <div className={Styles.slide}>
-          <img src={JS} alt="" />
+          <img src={REACT} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={HTML} alt="" />
+          <img src={GIT} alt="not found" />
+        </div>
+        <div className={Styles.slide}>
+          <img src={JS} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={CSS} alt="" />
+          <img src={HTML} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={NODE} alt="" />
+          <img src={CSS} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={SQL} alt="" />
+          <img src={NODE} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={REACT} alt="" />
+          <img src={SQL} alt="not found" />
         </div>
 
         <div className={Styles.slide}>
-          <img src={GIT} alt="" />
+          <img src={REACT} alt="not found" />
+        </div>
+
+        <div className={Styles.slide}>
+          <img src={GIT} alt="not found" />
         </div>
       </div>
     </div>

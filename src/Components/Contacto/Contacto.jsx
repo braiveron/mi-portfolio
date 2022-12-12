@@ -1,9 +1,10 @@
 import React from "react";
 import NavBar from "../NavBar/NavBar";
 import Styles from "./Contacto.module.css";
+
 import { useTheme } from "../Theme/Themes";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import GreenImg from "../../Utils/AvatarVerde.png";
+import Avatar from "../../Utils/Avatar.png";
 
 export default function Contacto() {
   const { theme } = useTheme();
@@ -16,7 +17,6 @@ export default function Contacto() {
       }}
     >
       <NavBar />
-
       <div className={Styles.cardContainer}>
         <div
           className={Styles.textContact}
@@ -73,9 +73,23 @@ export default function Contacto() {
               Hey there!
             </h1>
           </div>
-          <div className={Styles.imageContact}>
-            <img src={GreenImg} alt="not found" width={400} height={400} />
-          </div>
+
+          {/* <div className={Styles.imageContainer}>
+
+</div> */}
+          <p
+            className={Styles.circle}
+            style={{
+              backgroundColor: theme.backgroundRight,
+            }}
+          ></p>
+          <img
+            className={Styles.avatar}
+            src={Avatar}
+            alt="not found"
+            width={520}
+            height={520}
+          />
         </div>
       </div>
     </div>
