@@ -39,8 +39,9 @@ export default function Info() {
               Soy Braian de Buenos Aires, Argentina. <br /> Egresado de la
               carrera <strong> Full Stack Developer</strong>, Soy Henry®. <br />{" "}
               <br /> Si bien puedo aplicar mis conocimientos en cualquier área,
-              me inclino más hacia el Front End combinando mi experiencia en{" "}
-              <u>diseño gráfico</u> y lograr así una buena experiencia para
+              me inclino más hacia el Front End combinando lo adquirido en la
+              carrera de <u>diseño gráfico</u>, sumado también al manejo de
+              aplicaciones de ediciòn para lograr así una buena experiencia de
               usuarios. <br />
               <br />
               Mis hobbies son la danza y el ejercicio, mi lado creativo siempre

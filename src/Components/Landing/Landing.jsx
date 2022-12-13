@@ -31,6 +31,10 @@ export default function Landing() {
             👋 Hola, soy Braian
           </h2>
 
+          <div className={Styles.avatarCodingResponsive}>
+            <img src={Coding} alt="not found" width={300} height={300} />
+          </div>
+
           <h3
             className={Styles.presentacion}
             style={{ color: theme.textColor }}

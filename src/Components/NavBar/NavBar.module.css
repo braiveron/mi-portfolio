@@ -3,6 +3,8 @@
     src: url("../../Utils/raustila-Regular.ttf");
 }
 
+
+
 .navBar {
     width: 100vw;
     height: 15vh;
@@ -12,11 +14,6 @@
     transition: 0.7s;
     background-color: transparent;
 }
-
-/* .navBar .active {
-    background-color: rgba(64, 64, 64, 0.4);
-} */
-
 
 .navContent {
     display: flex;
@@ -152,4 +149,18 @@ input:checked + .slider::before {
 .offScreen {
     position: absolute;
     left: -99999px;
+}
+
+@media screen and (max-width: 1100px) {
+    .navContent {
+        margin: -25px 30px;
+    }
+
+    .nombre {
+        display: none;
+    }
+    
+    .switch {
+        display: none;
+    }
 }

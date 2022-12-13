@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+/* import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Styles from "./NavBar.module.css";
-import "./NavBar.css";
-import { useTheme } from "../Theme/Themes";
+import Styles from "./NavBar/NavBar.module.css";
+import "./NavPrueba.css";
+import { useTheme } from "./Theme/Themes";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 export default function NavBar() {
@@ -23,13 +23,11 @@ export default function NavBar() {
     }
   };
   window.addEventListener("scroll", changeBackground);
-  /*   className={clickFilters ? `${Styles["filters"]} ${Styles.active}` : `${Styles.filters}`} */
+
 
   return (
     <div
-    /* className={[navBar ? (Styles.navBar, Styles.active) : Styles.navBar].join(
-        " "
-      )} */
+
     >
       <div className={Styles.navContent}>
         <h1
@@ -218,3 +216,4 @@ export default function NavBar() {
     </div>
   );
 }
+ */
