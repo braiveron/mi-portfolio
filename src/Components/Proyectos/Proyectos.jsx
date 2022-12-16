@@ -3,6 +3,9 @@ import NavBar from "../NavBar/NavBar";
 import Styles from "./Proyectos.module.css";
 import { useTheme } from "../Theme/Themes";
 import BFLogo from "../../Utils/BFLogo.png";
+import Food from "../../Utils/Food.png";
+import Pokemon from "../../Utils/Pokemon.png";
+import PokeLoading from "../../Utils/PokeLoading.gif";
 import Calculadora from "../../Utils/Calculadora.png";
 import Tareas from "../../Utils/Tareas.png";
 import Contador from "../../Utils/Contador.png";
@@ -255,7 +258,7 @@ export default function Proyectos() {
       </div>
       <div className={Styles.rightContainer}>
         <div
-          className={Styles.cardTwo}
+          className={Styles.cardFood}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
@@ -280,13 +283,14 @@ export default function Proyectos() {
           >
             <div className={Styles.imgContainer}>
               <img
-                src={BFLogo}
+                src={Food}
                 alt="not found"
-                width={240}
-                height={80}
+                width={360}
+                height={120}
                 style={{
-                  backgroundColor: theme.BFbgc,
-                  padding: "5px 10px",
+                  backgroundColor: "#212121",
+                  padding: "6px 10px",
+                  borderRadius: "20px",
                 }}
               />
             </div>
@@ -313,7 +317,7 @@ export default function Proyectos() {
             >
               Repositorio
             </a>
-            <a
+            {/*             <a
               href="#"
               target="_blank"
               rel="noreferrer"
@@ -322,7 +326,7 @@ export default function Proyectos() {
               }}
             >
               Visita el proyecto →
-            </a>
+            </a> */}
           </div>
         </div>
 
@@ -407,7 +411,7 @@ export default function Proyectos() {
           </div>
 
           <div
-            className={Styles.cardTwo}
+            className={Styles.cardPokemon}
             style={{
               backgroundColor: theme.bgcCardProyect,
               border: theme.borderCard,
@@ -432,14 +436,18 @@ export default function Proyectos() {
             >
               <div className={Styles.imgContainer}>
                 <img
-                  src={BFLogo}
+                  src={Pokemon}
                   alt="not found"
-                  width={240}
+                  width={360}
+                  height={120}
+                  className={Styles.pokeBG}
+                />
+                <img
+                  src={PokeLoading}
+                  alt="not found"
+                  width={80}
                   height={80}
-                  style={{
-                    backgroundColor: theme.BFbgc,
-                    padding: "5px 10px",
-                  }}
+                  className={Styles.pokeGif}
                 />
               </div>
 
@@ -465,7 +473,7 @@ export default function Proyectos() {
               >
                 Repositorio
               </a>
-              <a
+              {/*               <a
                 href="#"
                 target="_blank"
                 rel="noreferrer"
@@ -474,7 +482,7 @@ export default function Proyectos() {
                 }}
               >
                 Visita el proyecto →
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

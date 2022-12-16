@@ -74,9 +74,9 @@
     transition: 0.5s;
 }
 
-.presentacion a:hover::before {
+/* .presentacion a:hover::before {
     width: 25%;   
-}
+} */
 
 
 .leftSide {

@@ -11,8 +11,10 @@ export default function Info() {
       className={Styles.infoContainer}
       style={{ backgroundColor: theme.bgcInfo }}
     >
-      <NavBar />
-      <div className={Styles.infoBackground}>
+      <div>
+        <NavBar />
+      </div>
+      <div className={Styles.infoPosition}>
         <div className={Styles.decorationOne}>
           <p
             className={Styles.circleOne}

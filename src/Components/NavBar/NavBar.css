@@ -43,24 +43,21 @@
         top: 0;
         background-color: rgba(0, 0, 0, 0.9);
         left: -100%;
-        z-index: 1;
+        z-index: 6;
         transition: 0.8s;
     } 
   
     .iconsResponsive{
-      position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 60% ;
-      height: 100vh;
     }
 
     
 
     .filters.active {
         left: 0;
+        top: 0;
+        position: absolute;
     }
   
     .filters li {
