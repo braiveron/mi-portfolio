@@ -10,33 +10,35 @@
 
 .bodyLanding {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    overflow: hidden;
     display: grid;
     grid-template: 
-    "navBar navBar"
-    "left right";
+    "navBar"
+    "right";
 }
 
 .navBar {
     grid-area: navBar;
-    position: fixed;
-    z-index: 1;
+    position: absolute;
+    z-index: 5;
     width: 100%;
 }
 
 .rightSide {
-    position: fixed;
+    position: relative;
+    z-index: 0;
     left: 31vw;
     width: 69vw;    
     height: 100%;
     grid-area: right;
-    justify-content: flex-start;
+    justify-content: center;
     align-content: center;
 }
 
 .avatarCoding {
 
-    position: relative;
+    position: absolute;
     z-index: 4;
     top: 60px;
     left: 100px;

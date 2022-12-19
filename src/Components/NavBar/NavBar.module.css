@@ -3,10 +3,6 @@
     src: url("../../Utils/raustila-Regular.ttf");
 }
 
-
-
-
-
 .navContent {
     display: flex;
     flex-direction: row;
