@@ -23,14 +23,9 @@ export default function NavBar() {
     }
   };
   window.addEventListener("scroll", changeBackground);
-  /*   className={clickFilters ? `${Styles["filters"]} ${Styles.active}` : `${Styles.filters}`} */
 
   return (
-    <div
-    /* className={[navBar ? (Styles.navBar, Styles.active) : Styles.navBar].join(
-        " "
-      )} */
-    >
+    <>
       <div className={Styles.navContent}>
         <h1
           className={Styles.nombre}
@@ -114,15 +109,6 @@ export default function NavBar() {
             ""
           ) : (
             <div className="navResponsive">
-              <h1
-                className="nombreResposive"
-                style={{
-                  color: theme.textColor,
-                }}
-              >
-                Braian
-              </h1>
-
               <div className="iconMenu-switch">
                 <div className="switch-container">
                   <label className="switchResponsive">
@@ -215,6 +201,6 @@ export default function NavBar() {
           </div>
         </ul>
       </div>
-    </div>
+    </>
   );
 }

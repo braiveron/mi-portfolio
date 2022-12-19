@@ -30,7 +30,7 @@ export default function Landing() {
           </h2>
 
           <div className={Styles.avatarCodingResponsive}>
-            <img src={Coding} alt="not found" width={300} height={300} />
+            <img src={Coding} alt="not found" width={200} height={200} />
           </div>
 
           <h3

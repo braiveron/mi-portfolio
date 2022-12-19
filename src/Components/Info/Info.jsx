@@ -11,6 +11,15 @@ export default function Info() {
       className={Styles.infoContainer}
       style={{ backgroundColor: theme.bgcInfo }}
     >
+      <div className={Styles.navBar}>
+        <NavBar />
+      </div>
+    </div>
+  );
+  /*     <div
+      className={Styles.infoContainer}
+      style={{ backgroundColor: theme.bgcInfo }}
+    >
       <div>
         <NavBar />
       </div>
@@ -52,6 +61,5 @@ export default function Info() {
           </div>
         </div>
       </div>
-    </div>
-  );
+    </div> */
 }
