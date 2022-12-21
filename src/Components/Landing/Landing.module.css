@@ -9,8 +9,8 @@
 }
 
 .bodyLanding {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
     display: grid;
     grid-template: 
@@ -143,11 +143,10 @@ input:checked + .slider::before {
 
 @media screen and (max-width: 1100px) {
     .bodyLanding {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
+        display: grid;
+        height: 100vh;
     }
-    
+
     .avatarCoding {
         display: none;
     }
@@ -162,8 +161,8 @@ input:checked + .slider::before {
 
     .rightSide {
         position: initial;
-        width: 100vw;
-        height: 100%;        
+        width: 100vw; 
+        
     }
 
     .presentacion {

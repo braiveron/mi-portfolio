@@ -39,7 +39,7 @@ export default function Proyectos() {
         <p className={Styles.sublineTitle}></p>
 
         <div
-          className={Styles.card}
+          className={Styles.cardBecoming}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
@@ -69,8 +69,8 @@ export default function Proyectos() {
               <img
                 src={BFLogo}
                 alt="not found"
-                width={240}
-                height={80}
+                width="80%"
+                height="40%"
                 style={{
                   backgroundColor: theme.BFbgc,
                   padding: "5px 10px",
@@ -125,7 +125,6 @@ export default function Proyectos() {
               border: theme.borderCard,
               boxShadow: theme.linkShadow,
               color: theme.textColor,
-              /*   onMouseOut: (this.style.backgroundColor = theme.prueba), */
             }}
           >
             visita mi Linkedin...
@@ -155,7 +154,7 @@ export default function Proyectos() {
             }}
           >
             <div className={Styles.imgContainer}>
-              <img src={Tareas} alt="not found" width={360} height={120} />
+              <img src={Tareas} alt="not found" width="100%" height="60%" />
             </div>
 
             <p
@@ -218,7 +217,7 @@ export default function Proyectos() {
             }}
           >
             <div className={Styles.imgContainer}>
-              <img src={Contador} alt="not found" width={200} height={240} />
+              <img src={Contador} alt="not found" width="60%" height="80%" />
 
               <p
                 style={{
@@ -285,8 +284,8 @@ export default function Proyectos() {
               <img
                 src={Food}
                 alt="not found"
-                width={360}
-                height={120}
+                width="100%"
+                height="40%"
                 style={{
                   backgroundColor: "#212121",
                   padding: "6px 10px",
@@ -331,7 +330,7 @@ export default function Proyectos() {
         </div>
 
         <div
-          className={Styles.cardThree}
+          className={Styles.cardCalucladora}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
@@ -355,7 +354,12 @@ export default function Proyectos() {
             }}
           >
             <div className={Styles.imgContainer}>
-              <img src={Calculadora} alt="not found" width={200} height={240} />
+              <img
+                src={Calculadora}
+                alt="not found"
+                width="60%"
+                height="100%"
+              />
 
               <p
                 style={{
@@ -403,7 +407,6 @@ export default function Proyectos() {
                 border: theme.borderCard,
                 boxShadow: theme.linkShadow,
                 color: theme.textColor,
-                /*   onMouseOut: (this.style.backgroundColor = theme.prueba), */
               }}
             >
               mi perfil Github...
@@ -438,15 +441,15 @@ export default function Proyectos() {
                 <img
                   src={Pokemon}
                   alt="not found"
-                  width={360}
-                  height={120}
+                  width="90%"
+                  height="40%"
                   className={Styles.pokeBG}
                 />
                 <img
                   src={PokeLoading}
                   alt="not found"
-                  width={80}
-                  height={80}
+                  width={150}
+                  height={150}
                   className={Styles.pokeGif}
                 />
               </div>
@@ -485,6 +488,21 @@ export default function Proyectos() {
               </a> */}
             </div>
           </div>
+        </div>
+        <div className={Styles.profileBox}>
+          <a
+            href="./Braian Veron.pdf"
+            download
+            rel="noreferrer"
+            style={{
+              backgroundColor: theme.bgcCardProyect,
+              border: theme.borderCard,
+              boxShadow: theme.linkShadow,
+              color: theme.textColor,
+            }}
+          >
+            Descarga mi CV
+          </a>
         </div>
       </div>
       <br /> <br />

@@ -9,25 +9,36 @@
 
 .infoContainer{
     height: 100vh;
-    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    grid-template: 
+    "navBar"
+    "card" ;
 }
 
-.infoPosition {
+.navBar {
+    grid-area: navBar;
+}
+
+.card {
+    position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    padding: 20px 40px;
+    grid-area: card;
+    width: 70vw;
+    margin: auto;
 }
 
 
 .decorationOne {
     position: relative;
-    top: 0;
-    right: -35rem;
+    top: -80%;
+    left: 80%;
 }
 
 .circleOne {
     position: relative;
-    z-index: 1;
     top: 15rem;
     right: 2rem;
     border-radius: 300px;
@@ -42,12 +53,6 @@
     height: 200px;
 }
 
-.card {
-    margin: 0 10em;
-    padding: 12px 25px;
-    position: absolute;
-    z-index: 2;
-}
 
 .infoTitle {
     position: relative;
@@ -73,21 +78,26 @@
 
 
 @media screen and (max-width: 1100px) {
-.card {
-    padding: 0 15px;
-    margin: 20px 5px 0px -25px;
-} 
+.infoContainer{
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    grid-template: 
+        "navBar"
+        "card" ;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 40px;
+        grid-area: card;
+        width: 70vw;
+        margin: auto;
+    }
  .decorationOne {
     display: none;  
 }
 
-.infoPosition {
-    display: flex;
-    align-items: flex-start;
-}
-.infoContainer{
-    height: 100vh;
-    width: 100vw;
-}
 
 }
