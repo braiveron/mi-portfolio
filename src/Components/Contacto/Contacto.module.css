@@ -9,8 +9,8 @@
 
 
 .contactContainer {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
 }
 
@@ -96,26 +96,30 @@
     .cardContainer {
         display: grid;
         grid-template: 
-        "leftSide" 
-        "rightSide";
+        "leftSide"
+        "rightSide" 
+        ;
         width: 80%;
-        /* margin: auto; */
     }
 
-    .leftSide {
-        grid-area: leftSide;
-        grid-template: 
-        "title"
-        "paragraph"
-        "links"
+    .linksContact {
+        grid-area: links;
+        margin-bottom: -50px;
+    }
+ 
+    .heyThere {
+        grid-area: heyThere;
+        margin-bottom: 10px;
     }
 
     .avatar {
+        grid-area: avatar;
         width: 240px;
         height: 240px;
     }
     
     .circle {
+        grid-area: circle;
         position: absolute;
         width: 210px;
         height: 165px;
