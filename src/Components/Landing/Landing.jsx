@@ -3,14 +3,19 @@ import NavBar from "../NavBar/NavBar";
 import Styles from "./Landing.module.css";
 import { useTheme } from "../Theme/Themes";
 import Coding from "../../Utils/AvatarCoding.png";
+import { motion } from "framer-motion";
 
 export default function Landing() {
   const { theme } = useTheme();
 
   return (
-    <div
+    <motion.div
       className={Styles.bodyLanding}
       style={{ backgroundColor: theme.backgroundLeft }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
     >
       <div className={Styles.navBar}>
         <NavBar />
@@ -61,6 +66,6 @@ export default function Landing() {
           </h3>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

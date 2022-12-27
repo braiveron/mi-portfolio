@@ -10,16 +10,21 @@ import Calculadora from "../../Utils/Calculadora.png";
 import Tareas from "../../Utils/Tareas.png";
 import Contador from "../../Utils/Contador.png";
 import Slider from "../Slider/Slider";
+import { motion } from "framer-motion";
 
 export default function Proyectos() {
   const { theme } = useTheme();
 
   return (
-    <div
+    <motion.div
       className={Styles.mainContainer}
       style={{
         backgroundColor: theme.bgcProyectos,
       }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
     >
       <div className={Styles.navContainer}>
         <NavBar />
@@ -38,12 +43,20 @@ export default function Proyectos() {
         </h2>
         <p className={Styles.sublineTitle}></p>
 
-        <div
+        <motion.div
           className={Styles.cardBecoming}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
           }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            rotate: [0, 10, 0],
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <div
             className={Styles.topCard}
@@ -60,11 +73,6 @@ export default function Proyectos() {
               borderTop: theme.borderCard,
             }}
           >
-            {/*  {theme ? (
-              <img src={BFLogo} alt="not found" width={240} height={80} />
-            ) : (
-              "HOLAS"
-            )} */}
             <div className={Styles.imgContainer}>
               <img
                 src={BFLogo}
@@ -113,9 +121,18 @@ export default function Proyectos() {
               Visita el proyecto →
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className={Styles.profileBox}>
+        <motion.div
+          className={Styles.profileBox}
+          initial={{ y: -100, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 1 }}
+        >
           <a
             href="https://www.linkedin.com/in/braianveron/"
             target="_blank"
@@ -129,14 +146,22 @@ export default function Proyectos() {
           >
             visita mi Linkedin...
           </a>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
           className={Styles.cardTareas}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
           }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            rotate: [0, 10, 0],
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <div
             className={Styles.topCard}
@@ -190,14 +215,22 @@ export default function Proyectos() {
               Visita el proyecto →
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
           className={Styles.cardContador}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
           }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            rotate: [0, 10, 0],
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <div
             className={Styles.topCard}
@@ -253,15 +286,23 @@ export default function Proyectos() {
               Visita el proyecto →
             </a>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className={Styles.rightContainer}>
-        <div
+        <motion.div
           className={Styles.cardFood}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
           }}
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            rotate: [0, 10, 0],
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <div
             className={Styles.topCard}
@@ -327,14 +368,22 @@ export default function Proyectos() {
               Visita el proyecto →
             </a> */}
           </div>
-        </div>
+        </motion.div>
 
-        <div
+        <motion.div
           className={Styles.cardCalucladora}
           style={{
             backgroundColor: theme.bgcCardProyect,
             border: theme.borderCard,
           }}
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            rotate: [0, 10, 0],
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
         >
           <div
             className={Styles.topCard}
@@ -394,10 +443,19 @@ export default function Proyectos() {
               Visita el proyecto →
             </a>
           </div>
-        </div>
+        </motion.div>
 
-        <div className={Styles.linkCard}>
-          <div className={Styles.profileBoxTwo}>
+        <motion.div className={Styles.linkCard}>
+          <motion.div
+            className={Styles.profileBoxTwo}
+            initial={{ y: -100, opacity: 0 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: { type: "spring", bounce: 0.4, duration: 2 },
+            }}
+            viewport={{ once: false, amount: 0.5 }}
+          >
             <a
               href="https://www.linkedin.com/in/braianveron/"
               target="_blank"
@@ -411,14 +469,22 @@ export default function Proyectos() {
             >
               mi perfil Github...
             </a>
-          </div>
+          </motion.div>
 
-          <div
+          <motion.div
             className={Styles.cardPokemon}
             style={{
               backgroundColor: theme.bgcCardProyect,
               border: theme.borderCard,
             }}
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              rotate: [0, 10, 0],
+              transition: { type: "spring", bounce: 0.4, duration: 2 },
+            }}
+            viewport={{ once: false, amount: 0.5 }}
           >
             <div
               className={Styles.topCard}
@@ -487,9 +553,18 @@ export default function Proyectos() {
                 Visita el proyecto →
               </a> */}
             </div>
-          </div>
-        </div>
-        <div className={Styles.profileBox}>
+          </motion.div>
+        </motion.div>
+        <motion.div
+          className={Styles.profileBox}
+          initial={{ y: -100, opacity: 0 }}
+          whileInView={{
+            y: 0,
+            opacity: 1,
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 1 }}
+        >
           <a
             href="./Braian Veron.pdf"
             download
@@ -503,9 +578,9 @@ export default function Proyectos() {
           >
             Descarga mi CV
           </a>
-        </div>
+        </motion.div>
       </div>
       <br /> <br />
-    </div>
+    </motion.div>
   );
 }

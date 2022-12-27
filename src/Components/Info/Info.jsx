@@ -2,14 +2,19 @@ import React from "react";
 import NavBar from "../NavBar/NavBar";
 import Styles from "./Info.module.css";
 import { useTheme } from "../Theme/Themes";
+import { motion } from "framer-motion";
 
 export default function Info() {
   const { theme } = useTheme();
 
   return (
-    <div
+    <motion.div
       className={Styles.infoContainer}
       style={{ backgroundColor: theme.bgcInfo }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
     >
       <div className={Styles.navBar}>
         <NavBar />
@@ -50,6 +55,6 @@ export default function Info() {
           guiandome, tanto en lo personal como en lo profesional.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 }

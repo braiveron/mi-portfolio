@@ -4,16 +4,21 @@ import Styles from "./Contacto.module.css";
 import { useTheme } from "../Theme/Themes";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import Avatar2 from "../../Utils/Avatar2.png";
+import { motion } from "framer-motion";
 
 export default function Contacto() {
   const { theme } = useTheme();
 
   return (
-    <div
+    <motion.div
       className={Styles.contactContainer}
       style={{
         background: theme.backgroundRight,
       }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+      transition={{ duration: 0.2, ease: "easeOut" }}
     >
       <NavBar />
 
@@ -87,21 +92,35 @@ export default function Contacto() {
             background: theme.bgcCardInfo,
           }}
         >
-          <p
+          <motion.p
             className={Styles.circle}
             style={{
               backgroundColor: theme.backgroundRight,
             }}
-          ></p>
-          <img
+            initial={{ x: -100 }}
+            animate={{ x: 0, rotate: [0, 90, 0] }}
+            transition={{
+              type: "spring",
+              bounce: 0.8,
+            }}
+          ></motion.p>
+
+          <motion.img
             className={Styles.avatar}
             src={Avatar2}
             alt="not found"
             width={480}
             height={480}
+            initial={{ y: -100 }}
+            animate={{ y: 0, rotate: [0, 90, -90, 20, 0] }}
+            transition={{
+              type: "spring",
+              bounce: 0.8,
+              duration: 1,
+            }}
           />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
