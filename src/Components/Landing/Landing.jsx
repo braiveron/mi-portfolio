@@ -7,6 +7,39 @@ import { motion } from "framer-motion";
 
 export default function Landing() {
   const { theme } = useTheme();
+  const greeting = "👋 Hola, soy Braian";
+  const letters = Array.from(greeting);
+
+  const container = {
+    hidden: { opacity: 0 },
+    visible: (i = 1) => ({
+      opacity: 1,
+      transition: { staggerChildren: 0.1, delayChildren: 0.04 * i },
+    }),
+  };
+
+  const child = {
+    visible: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      x: -20,
+      y: 10,
+      transition: {
+        type: "spring",
+        damping: 12,
+        stiffness: 100,
+      },
+    },
+  };
 
   return (
     <motion.div
@@ -30,9 +63,28 @@ export default function Landing() {
         style={{ backgroundColor: theme.backgroundRight }}
       >
         <div className={Styles.textContainer}>
-          <h2 className={Styles.saludo} style={{ color: theme.textColor }}>
+          <motion.div
+            className={Styles.saludo}
+            variants={container}
+            initial="hidden"
+            animate="visible"
+          >
+            {letters.map((letter, index) => (
+              <motion.span
+                style={{
+                  color: theme.textColor,
+                }}
+                variants={child}
+                key={index}
+              >
+                {letter === " " ? "\u00A0" : letter}
+              </motion.span>
+            ))}
+          </motion.div>
+
+          {/*       <h2 className={Styles.saludo} style={{ color: theme.textColor }}>
             👋 Hola, soy Braian
-          </h2>
+          </h2> */}
 
           <div className={Styles.avatarCodingResponsive}>
             <img src={Coding} alt="not found" width={200} height={200} />

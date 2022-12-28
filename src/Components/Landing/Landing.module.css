@@ -52,6 +52,7 @@
 .saludo {
     font-family: 'Raustila';
     margin-top: 20vh;
+    margin-bottom: 4vh;
     font-size: 40px;
     letter-spacing: 4px;
     transform: rotate(-3deg); 
