@@ -7,8 +7,9 @@ import Food from "../../Utils/Food.png";
 import Pokemon from "../../Utils/Pokemon.png";
 import PokeLoading from "../../Utils/PokeLoading.gif";
 import Calculadora from "../../Utils/Calculadora.png";
-import Tareas from "../../Utils/Tareas.png";
 import Contador from "../../Utils/Contador.png";
+import Tareas from "../../Utils/Tareas.png";
+import Weather from "../../Utils/Weather.png";
 import Slider from "../Slider/Slider";
 import { motion } from "framer-motion";
 
@@ -457,7 +458,7 @@ export default function Proyectos() {
             viewport={{ once: false, amount: 0.5 }}
           >
             <a
-              href="https://www.linkedin.com/in/braianveron/"
+              href="https://github.com/braiveron"
               target="_blank"
               rel="noreferrer"
               style={{
@@ -578,6 +579,77 @@ export default function Proyectos() {
           >
             Descarga mi CV
           </a>
+        </motion.div>
+
+        <motion.div
+          className={Styles.cardWeather}
+          style={{
+            backgroundColor: theme.bgcCardProyect,
+            border: theme.borderCard,
+          }}
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            rotate: [0, 10, 0],
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
+        >
+          <div
+            className={Styles.topCard}
+            style={{
+              color: theme.textColor,
+            }}
+          >
+            •••
+          </div>
+
+          <div
+            className={Styles.textCard}
+            style={{
+              borderTop: theme.borderCard,
+
+              color: theme.textColor,
+            }}
+          >
+            <div className={Styles.imgContainer}>
+              <img src={Weather} alt="not found" width="50%" height="90%" />
+
+              <p
+                style={{
+                  color: theme.textColor,
+                  marginLeft: "40px",
+                }}
+              >
+                Aplicacion para buscar el clima de diferentes ciudades del
+                mundo. <br />
+              </p>
+            </div>
+          </div>
+
+          <div className={Styles.linksCard}>
+            <a
+              href="https://github.com/braiveron/weatherApp"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Repositorio
+            </a>
+            <a
+              href="https://bv-weather.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Visita el proyecto →
+            </a>
+          </div>
         </motion.div>
       </div>
       <br /> <br />
