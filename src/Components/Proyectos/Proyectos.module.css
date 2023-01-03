@@ -199,7 +199,7 @@
     }
     
     .cardBecoming, .cardTareas, .cardContador,
-    .cardFood, .cardCalucladora, .cardPokemon {
+    .cardFood, .cardCalucladora, .cardPokemon, .cardWeather {
         width: 80%;
         margin: 0 0 2rem;
     }
