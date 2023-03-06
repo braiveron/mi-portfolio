@@ -112,7 +112,7 @@ export default function Proyectos() {
               Repositorio
             </a>
             <a
-              href="https://becoming-fit.vercel.app/"
+              href="https://becoming-fit-br1oli.vercel.app/"
               target="_blank"
               rel="noreferrer"
               style={{
