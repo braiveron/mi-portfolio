@@ -10,6 +10,7 @@ import Calculadora from "../../Utils/Calculadora.png";
 import Contador from "../../Utils/Contador.png";
 import Tareas from "../../Utils/Tareas.png";
 import Weather from "../../Utils/Weather.png";
+import ColmanProd from "../../Utils/ColmanProd.png";
 import Slider from "../Slider/Slider";
 import { motion } from "framer-motion";
 
@@ -43,6 +44,78 @@ export default function Proyectos() {
           Proyectos.
         </h2>
         <p className={Styles.sublineTitle}></p>
+
+        <motion.div
+          className={Styles.cardColman}
+          style={{
+            backgroundColor: theme.bgcCardProyect,
+            border: theme.borderCard,
+          }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{
+            x: 0,
+            opacity: 1,
+            rotate: [0, 10, 0],
+            transition: { type: "spring", bounce: 0.4, duration: 2 },
+          }}
+          viewport={{ once: false, amount: 0.5 }}
+        >
+          <div
+            className={Styles.topCard}
+            style={{
+              color: theme.textColor,
+            }}
+          >
+            •••
+          </div>
+
+          <div
+            className={Styles.textCard}
+            style={{
+              borderTop: theme.borderCard,
+
+              color: theme.textColor,
+            }}
+          >
+            <div className={Styles.imgContainer}>
+              <img src={ColmanProd} alt="not found" width="60%" height="80%" />
+
+              <p
+                style={{
+                  color: theme.textColor,
+                  marginLeft: "1rem",
+                }}
+              >
+                Landing Page con formularios de contacto para uso de Productora
+                Audiovisual.
+                <br />
+              </p>
+            </div>
+          </div>
+
+          <div className={Styles.linksCard}>
+            <a
+              href="https://github.com/braiveron/colman-producciones"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Repositorio
+            </a>
+            <a
+              href="https://colmanproduccionesar.com.ar"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                color: theme.textColor,
+              }}
+            >
+              Visita el proyecto →
+            </a>
+          </div>
+        </motion.div>
 
         <motion.div
           className={Styles.cardBecoming}

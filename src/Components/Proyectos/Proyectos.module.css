@@ -98,7 +98,7 @@
 
 .cardBecoming {
     border-radius: 20px;
-    margin-top: -40px;
+    margin-top: 10rem;
 }
 
 .cardTareas {
@@ -108,6 +108,11 @@
 
 .cardContador {
     margin: 1rem 0 1rem 2rem;
+    border-radius: 20px;
+}
+
+.cardColman {
+   
     border-radius: 20px;
 }
 
